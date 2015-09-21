@@ -1,12 +1,29 @@
 import Ember from 'ember';
-import config from './config/environment';
+// import config from './config/environment';
 
-var Router = Ember.Router.extend({
-  location: config.locationType
+// var Router = Ember.Router.extend({
+//   location: config.locationType
+// });
+
+// Router.map(function() {
+//   this.route('cities');
+// });
+
+export default Ember.Route.extend({
+  model() {
+    return this.store.findAll('cities');
+  },
+
+  actions: {
+    save3(params) {
+      var newCity = this.store.createRecord('cities', params);
+      newCity.save();
+      this.transitionTo('cities');
+    },
+
+    destroyCity(cities) {
+      cities.destroyRecord();
+      this.transitionTo('cities');
+    }
+  }
 });
-
-Router.map(function() {
-  this.route('about');
-});
-
-export default Router;

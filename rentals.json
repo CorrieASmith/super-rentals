@@ -17,5 +17,20 @@
       "type": "Apartment",
       "bedrooms": 3,
       "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg"
-      }]
+      }],
+
+      "cities": [{  "name": "Paris",
+        "attractions": "Eiffel Tower",
+        "image": "http://7-themes.com/data_images/out/59/6973530-eiffel-tower-at-night-wallpaper-1080p.jpg"
+      },
+      {
+        "name": "Seattle",
+        "attractions": "Pike Place Market",
+        "image": "http://www.backpackwithbrock.com/wp-content/uploads/2013/12/Seattle-Pike-Place-Market-Lights.jpg"
+      },
+      {
+        "name": "Portland",
+        "attractions": "Rose Garden",
+        "image": "http://media-cache-ak0.pinimg.com/originals/ef/73/c3/ef73c3f206fdaaff2973d448710d2e0c.jpg"
+        }]
     }
