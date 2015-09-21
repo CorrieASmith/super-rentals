@@ -5,3 +5,6 @@ export default DS.Model.extend({
   attractions: DS.attr(),
   image: DS.attr()
 });
+
+
+// attractions: DS.hasMany('attraction', {async: true})

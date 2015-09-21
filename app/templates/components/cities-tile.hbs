@@ -2,7 +2,7 @@
   {{#if isImageShowing }}
   <p><img src={{cities.image}} alt={{cities.attractions}} {{action 'imageHide'}}></p>
   {{else}}
-  <br /><button {{action 'imageShow'}}>Show image</button>
+  <br /><button class="btn btn-info" {{action 'imageShow'}}>Show image</button>
   {{/if}}
-  <button {{action 'delete' cities}}>Delete</button><br /> <br />
+  <button class="btn btn-danger" {{action 'delete' cities}}>Delete</button><br /> <br />
 </li>
