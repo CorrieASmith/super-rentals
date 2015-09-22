@@ -4,5 +4,6 @@
   {{else}}
   <br /><button class="btn btn-info"  {{action 'imageShow'}}>Show image</button>
   {{/if}}
+  {{update-rental rental=rental update="update"}}
   <button class="btn btn-danger" {{action 'delete' rental}}>Delete</button><br /> <br />
 </li>

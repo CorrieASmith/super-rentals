@@ -5,7 +5,7 @@ We hope you find exactly what you're looking for in a place to stay.
 <ul>
   {{#each model as |rental-unit|}}
     <!-- {{rental-tile rental=rental-unit}} -->
-    {{rental-tile rental=rental-unit destroyRental="destroyRental"}}
+    {{rental-tile rental=rental-unit update="update" destroyRental="destroyRental"}}
   {{/each}}
 </ul>
 
