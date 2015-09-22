@@ -1,9 +1,9 @@
-<li>{{rental.owner}}'s {{rental.type}} in {{rental.city}}
+<li><i class="fa fa-home"></i> {{rental.owner}}'s {{rental.type}} in {{rental.city}}
   {{#if isImageShowing }}
   <p><img src={{rental.image}} alt={{rental.type}} {{action 'imageHide'}}></p>
   {{else}}
-  <br /><button class="btn btn-info"  {{action 'imageShow'}}>Show image</button>
+  <br /><button class="btn btn-info"  {{action 'imageShow'}}><i class="fa fa-picture-o"></i></button>
   {{/if}}
   {{update-rental rental=rental update="update"}}
-  <button class="btn btn-danger" {{action 'delete' rental}}>Delete</button><br /> <br />
+  <button class="btn btn-danger" {{action 'delete' rental}}><i class="fa fa-trash-o"></i></button><br /> <br />
 </li>

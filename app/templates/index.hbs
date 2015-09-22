@@ -1,8 +1,8 @@
-<h1> Welcome to Super Rentals </h1>
+<div class="well"><h1> Welcome to Super Rentals </h1>
 
 We hope you find exactly what you're looking for in a place to stay.
-
-<ul>
+</div>
+<ul class="fa-ul">
   {{#each model as |rental-unit|}}
     <!-- {{rental-tile rental=rental-unit}} -->
     {{rental-tile rental=rental-unit update="update" destroyRental="destroyRental"}}
