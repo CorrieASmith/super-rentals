@@ -4,7 +4,8 @@
   {{else}}
   <br /><button class="btn btn-info"  {{action 'imageShow'}}><i class="fa fa-picture-o"></i></button>
   {{/if}}
-  <button class="btn btn-warning" {{update-rental rental=rental update="update"}}><i class="fa fa-pencil-square-o"></i></button>
+  {{update-rental rental=rental update="update"}}
+
   <button class="btn btn-danger" {{action 'delete' rental}}><i class="fa fa-trash-o"></i></button><br />
 </li>
 <br />

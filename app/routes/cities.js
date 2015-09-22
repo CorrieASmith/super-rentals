@@ -15,7 +15,7 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    save3(params) {
+    save(params) {
       var newCity = this.store.createRecord('cities', params);
       newCity.save();
       this.transitionTo('cities');

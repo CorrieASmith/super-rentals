@@ -1,6 +1,8 @@
 import Ember from 'ember'
 
 export default Ember.Component.extend({
+
+  tagName: "span",
   updateRentalForm: false,
   actions: {
     updateRentalForm() {
@@ -12,7 +14,7 @@ export default Ember.Component.extend({
         city: this.get('city'),
         type: this.get('type'),
         image: this.get('image'),
-        bedrooms: this.get('bedrooms')  
+        bedrooms: this.get('bedrooms')
       };
       this.set('updateRentalForm', false);
       this.sendAction('update', rental, params);
