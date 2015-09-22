@@ -1,9 +1,10 @@
-<li><i class="fa fa-home"></i> {{#link-to 'rental' rental.id}}{{rental.owner}}'s {{rental.type}} in {{rental.city}} {{/link-to}}
+<li><h4><i class="fa fa-home"></i> {{#link-to 'rental' rental.id}}{{rental.owner}}'s {{rental.type}} in {{rental.city}} {{/link-to}}</h4>
   {{#if isImageShowing }}
   <p><img src={{rental.image}} alt={{rental.type}} {{action 'imageHide'}}></p>
   {{else}}
   <br /><button class="btn btn-info"  {{action 'imageShow'}}><i class="fa fa-picture-o"></i></button>
   {{/if}}
-  {{update-rental rental=rental update="update"}}
-  <button class="btn btn-danger" {{action 'delete' rental}}><i class="fa fa-trash-o"></i></button><br /> <br />
+  <button class="btn btn-warning" {{update-rental rental=rental update="update"}}><i class="fa fa-pencil-square-o"></i></button>
+  <button class="btn btn-danger" {{action 'delete' rental}}><i class="fa fa-trash-o"></i></button><br />
 </li>
+<br />
